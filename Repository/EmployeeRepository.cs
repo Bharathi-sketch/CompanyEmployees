@@ -13,5 +13,9 @@ namespace Contracts
         : base(repositoryContext)
         {
         }
+
+        public IEnumerable<Employee> GetEmployees(Guid CompanyId, bool trackChanges) =>
+            FindByCondition(e => e.CompanyID.Equals(CompanyId), trackChanges)
+            .OrderBy(e => e.Name).ToList();
     }
 }
