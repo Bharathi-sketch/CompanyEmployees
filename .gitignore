@@ -19,6 +19,8 @@ mono_crash.*
 # Ignore build output directories
 bin/
 obj/
+CompanyEmployees/internal_logs/
+internal_logs/
 CompanyEmployees/obj/
 CompanyEmployees/bin/
 CompanyEmployees.Presentation/obj/
